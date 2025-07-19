@@ -48,7 +48,7 @@ li a{
     align-items: center;
     padding: 0;
     margin-top: -1px;
-    gap: 12px;
+    gap: 15px;
   }
   .navbar h3{
     padding-left: 0;
@@ -79,6 +79,10 @@ li a{
 .banner-image img{
   max-width: 100%;
 }
+.banner-image img:hover{
+  transform: scale(1.25);
+  transition: 1.5s;
+}
 .btn-primary{
   width: 195px;
   height: 44px;
@@ -90,6 +94,10 @@ li a{
   font-weight: 700;
   background-color: rgba(224, 44, 109, 1);
 }
+.btn-primary:hover{
+  background-color: rgba(58, 58, 58, 1);
+  cursor: pointer;
+}
 @media screen and (max-width: 576px) {
   .banner-section{
     flex-direction: column-reverse;
@@ -100,8 +108,15 @@ li a{
   }
   .banner-description{
     margin-top: 0;
+    padding-top: -15px;
     text-align: center;
-  }  
+  } 
+  .banner-image img{
+    width: 90%;
+    padding-top: 25px;
+    padding-left: 25px;
+    margin-bottom: 0;
+  } 
 }
 /* sponsor area style */
 .sponsor-area{
@@ -165,6 +180,11 @@ li a{
   color: orange;
   padding-top: 8px;
 }
+.item-collection:hover{
+  transform: scale(1.1);
+  transition: 1.2s;
+  background-color: lightgray;
+}
 .item-collection p{
   font-size: 14px;
   color: gray;
@@ -180,16 +200,13 @@ li a{
     margin-bottom: 20px;
   }
   .product-collection-area{
-    margin-left: 12px;
+    margin-left: 15px;
     grid-template-columns: repeat(1, 330px);
     gap: 18px;
   }
   .product-collection-area h3{
    text-align: center;
   }
-  .item-collection{
-    
-  } 
 }
 /* Feature section */
 .feature-section{
@@ -199,6 +216,10 @@ li a{
   margin-left: 20px;
   margin-bottom: 30px;
   gap: 150px;
+}
+.feature-image img:hover{
+  transform: rotateY(360deg);
+  transition: 1.5s;
 }
 .feature-image img{
   max-width: 100%;
@@ -224,6 +245,10 @@ li a{
   font-size: 16px;
   font-weight: 700;
   background-color: rgba(224, 44, 109, 1);
+}
+.btn-secondary:hover{
+  background-color: rgba(58, 58, 58, 1);
+  cursor: pointer;
 }
 @media screen and (max-width: 576px) {
   .feature-section{
